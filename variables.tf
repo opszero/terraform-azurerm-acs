@@ -14,7 +14,7 @@ variable "resource_group_name" {
 }
 
 variable "data_location" {
-  description = "Azure region"
+  description = "The location where the Communication service stores its data at rest"
   type        = string
   default     = "United States"
 }
@@ -25,16 +25,16 @@ variable "ecs_enabled" {
   default     = true
 }
 
-variable "ecs_azure_managed_domain_enabled" {
+variable "azure_managed_domain_enabled" {
   description = "Enable or disable Azure Managed Email Domain"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "ecs_entra_custom_role_enabled" {
   description = "Enable or disable custom role definition for ACS email access"
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "ecs_custom_domains" {
@@ -51,4 +51,10 @@ variable "extra_tags" {
   description = "Additional tags to apply to resources"
   type        = map(string)
   default     = {}
+}
+
+variable "custom_domain_enabled" {
+  description = "If true, custom domain resources will be created"
+  type        = bool
+  default     = false
 }

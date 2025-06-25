@@ -11,10 +11,7 @@ module "acs" {
   email_service_name         = "acs-email"
   resource_group_name        = ""
   data_location              = "United States"
-
-  ecs_enabled                      = true
-  ecs_azure_managed_domain_enabled = true
-  ecs_entra_custom_role_enabled    = true
+  custom_domain_enabled      = true
 
   extra_tags = {
     environment = "dev"
