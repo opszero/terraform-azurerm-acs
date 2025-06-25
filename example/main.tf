@@ -4,7 +4,7 @@ provider "azurerm" {
 
 
 
-module "azure_email_comm_service" {
+module "acs" {
   source = "./../"
 
   communication_service_name = "acs"
