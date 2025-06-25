@@ -16,7 +16,7 @@ variable "resource_group_name" {
 variable "data_location" {
   description = "Azure region"
   type        = string
-  default     = "East US"
+  default     = "United States"
 }
 
 variable "ecs_enabled" {

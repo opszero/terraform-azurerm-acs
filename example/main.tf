@@ -7,10 +7,10 @@ provider "azurerm" {
 module "azure_email_comm_service" {
   source = "./../"
 
-  communication_service_name = "acs-intliges"
-  email_service_name         = "acs-intliges-email"
+  communication_service_name = "acs"
+  email_service_name         = "acs-email"
   resource_group_name        = ""
-  data_location              = "India"
+  data_location              = "United States"
 
   ecs_enabled                      = true
   ecs_azure_managed_domain_enabled = true
@@ -23,7 +23,7 @@ module "azure_email_comm_service" {
 
   ecs_custom_domains = [
     {
-      name                = "mail.intliges.com"
+      name                = "mail.example.com"
       domain_management   = "CustomerManaged"
       association_enabled = true
     }

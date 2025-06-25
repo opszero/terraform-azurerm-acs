@@ -1,16 +1,3 @@
-#output "acs_communication_service_id" {
-#  value = azurerm_communication_service.main[0].id
-#}
-#
-#output "acs_email_service_id" {
-#  value = azurerm_email_communication_service.main[0].id
-#}
-
-
-# --------------------------
-# outputs.tf
-# --------------------------
-
 output "communication_service_id" {
   description = "ID of the Azure Communication Service"
   value       = try(azurerm_communication_service.main[0].id, null)
