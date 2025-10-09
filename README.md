@@ -9,6 +9,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_acs_email_role_name"></a> [acs\_email\_role\_name](#input\_acs\_email\_role\_name) | The name of the custom role for ACS Email Write | `string` | `"ACS Email Write"` | no |
 | <a name="input_azure_managed_domain_enabled"></a> [azure\_managed\_domain\_enabled](#input\_azure\_managed\_domain\_enabled) | Enable or disable Azure Managed Email Domain | `bool` | `false` | no |
 | <a name="input_communication_service_name"></a> [communication\_service\_name](#input\_communication\_service\_name) | Name of the Azure Communication Service | `string` | n/a | yes |
 | <a name="input_custom_domain_enabled"></a> [custom\_domain\_enabled](#input\_custom\_domain\_enabled) | If true, custom domain resources will be created | `bool` | `false` | no |
