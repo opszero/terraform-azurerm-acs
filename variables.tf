@@ -58,3 +58,9 @@ variable "custom_domain_enabled" {
   type        = bool
   default     = false
 }
+
+variable "acs_email_role_name" {
+  description = "The name of the custom role for ACS Email Write"
+  type        = string
+  default     = "ACS Email Write"
+}
